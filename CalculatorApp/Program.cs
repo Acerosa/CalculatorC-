@@ -11,7 +11,9 @@ static void Main(string[] args)
             int num2 = GetNumber("Enter your second number:");
             string operation = GetOperation();
             
+             int result = PerformCalculation(num1, num2, operation);
 
+            Console.WriteLine($"The result of {num1} {operation} {num2} is: {result}");
 
             Console.ReadKey();
         }
@@ -44,7 +46,33 @@ static void Main(string[] args)
             }
             return operation;
         }
-
-
-    }
+        static int PerformCalculation(int num1, int num2, string operation)
+            {
+                int result = 0;
+                switch (operation)
+                {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        break;
+                    case "/":
+                        if (num2 != 0)
+                        {
+                            result = num1 / num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Error: Division by zero is not allowed.");
+                        }
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
+                }
+                return result;
+          }
+     }
 }
+

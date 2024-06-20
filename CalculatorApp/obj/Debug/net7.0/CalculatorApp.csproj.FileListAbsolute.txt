@@ -1,0 +1,15 @@
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/bin/Debug/net7.0/CalculatorApp
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/bin/Debug/net7.0/CalculatorApp.deps.json
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/bin/Debug/net7.0/CalculatorApp.runtimeconfig.json
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/bin/Debug/net7.0/CalculatorApp.dll
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/bin/Debug/net7.0/CalculatorApp.pdb
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.csproj.AssemblyReference.cache
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.AssemblyInfoInputs.cache
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.AssemblyInfo.cs
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.csproj.CoreCompileInputs.cache
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.dll
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/refint/CalculatorApp.dll
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.pdb
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/CalculatorApp.genruntimeconfig.cache
+/Users/ricardorosa/Documents/projects_.net/CalculatorApp/CalculatorApp/obj/Debug/net7.0/ref/CalculatorApp.dll

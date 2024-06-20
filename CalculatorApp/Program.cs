@@ -1,91 +1,54 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Calculator
 {
+    // Define the main program class
     class Program
     {
-static void Main(string[] args)
+        // Define the Main method, the entry point of the program
+        static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the calculator program");
-             bool keepRunning = true;
-            while (keepRunning)
-            {
-                int num1 = GetNumber("Enter your first number:");
-                int num2 = GetNumber("Enter your second number:");
-                string operation = GetOperation();
+            // Declare variables to store the first number, second number, operator, and result
+            
+        
+            // Display a welcome message
+            
 
-                int result = PerformCalculation(num1, num2, operation);
+            // Prompt the user to enter the first number
+            
+            // Read and convert the first number from the console input
+           
+            // Prompt the user to enter the second number
+           
+            // Read and convert the second number from the console input
+           
 
-                Console.WriteLine($"The result of {num1} {operation} {num2} is: {result}");
+            // Prompt the user to choose the desired operation
+            
+            // Read the chosen operation from the console input
+           
 
-                keepRunning = AskToContinue();
-            }
+            // Perform the calculation based on the chosen operation
+           
+                // Addition
+                
+                // Subtraction
+              
+                // Division
+              
+                // Multiplication
+                
+                // Handle invalid operation
+                
 
-            Console.WriteLine("Thank you for using the calculator program. Goodbye!");
+            // Display the result of the calculation
+           
+            // Wait for a key press before exiting
+            
         }
-
-        static int GetNumber(string prompt)
-        {
-            int number;
-            Console.WriteLine(prompt);
-            while (!int.TryParse(Console.ReadLine(), out number))
-            {
-                Console.WriteLine("Invalid input. Please enter a valid number.");
-            }
-            return number;
-        }
-
-        static string GetOperation()
-        {
-            Console.WriteLine("Please choose your desired operation:");
-            Console.WriteLine("For addition choose (+),\nFor subtraction choose (-),\nFor division choose (/),\nFor multiplication choose (*)");
-
-            string operation;
-            while (true)
-            {
-                operation = Console.ReadLine();
-                if (operation == "+" || operation == "-" || operation == "/" || operation == "*")
-                {
-                    break;
-                }
-                Console.WriteLine("Invalid operation. Please choose a valid operation (+, -, /, *).");
-            }
-            return operation;
-        }
-        static int PerformCalculation(int num1, int num2, string operation)
-            {
-                int result = 0;
-                switch (operation)
-                {
-                    case "+":
-                        result = num1 + num2;
-                        break;
-                    case "-":
-                        result = num1 - num2;
-                        break;
-                    case "/":
-                        if (num2 != 0)
-                        {
-                            result = num1 / num2;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Error: Division by zero is not allowed.");
-                        }
-                        break;
-                    case "*":
-                        result = num1 * num2;
-                        break;
-                }
-                return result;
-          }
-
-    static bool AskToContinue()
-        {
-            Console.WriteLine("Do you want to perform another calculation? (y/n)");
-            string response = Console.ReadLine().ToLower();
-            return response == "y";
-        }
-     }
+    }
 }
-

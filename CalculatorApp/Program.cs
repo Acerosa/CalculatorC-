@@ -7,15 +7,21 @@ namespace Calculator
 static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the calculator program");
-            int num1 = GetNumber("Enter your first number:");
-            int num2 = GetNumber("Enter your second number:");
-            string operation = GetOperation();
-            
-             int result = PerformCalculation(num1, num2, operation);
+             bool keepRunning = true;
+            while (keepRunning)
+            {
+                int num1 = GetNumber("Enter your first number:");
+                int num2 = GetNumber("Enter your second number:");
+                string operation = GetOperation();
 
-            Console.WriteLine($"The result of {num1} {operation} {num2} is: {result}");
+                int result = PerformCalculation(num1, num2, operation);
 
-            Console.ReadKey();
+                Console.WriteLine($"The result of {num1} {operation} {num2} is: {result}");
+
+                keepRunning = AskToContinue();
+            }
+
+            Console.WriteLine("Thank you for using the calculator program. Goodbye!");
         }
 
         static int GetNumber(string prompt)
@@ -73,6 +79,13 @@ static void Main(string[] args)
                 }
                 return result;
           }
+
+    static bool AskToContinue()
+        {
+            Console.WriteLine("Do you want to perform another calculation? (y/n)");
+            string response = Console.ReadLine().ToLower();
+            return response == "y";
+        }
      }
 }
 
